@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Enables responsive design-->
+    <title>Contact Me</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="banner">
+            <div id="title">
+                <h1>Contact Me</h1>
+            </div>
+            <div id="nav">
+                <img src="nate.jpeg">
+                <div class="navlink"><a href="index.html">Home</a></div> 
+                <div class="navlink"><a href="about.html">About Me</a></div> 
+                <div class="navlink"><a href="projects.html">Projects</a></div> 
+                <div class="navlink"><a href="contact.html">Contact Me</a></div> 
+            </div>
+        </div>
+        <div id="contact">
+            <h2>Please use below form to contact me!</h2>
+            <form action=mailto:email@email.com ?subject=Signup Form method="post" enctype="text/plain" name="form">
+                <p> 
+                    <label for="fname">First Name:</label> <!--Recognizes "name" from input tag-->
+                    <input type="text" name="fname" size="32" required placeholder="Enter your first name"> 
+                </p>
+                <p> 
+                    <label for="lname">Last Name:</label> <!--Recognizes "name" from input tag-->
+                    <input type="text" name="lname" size="32" required placeholder="Enter your last name"> 
+                </p>
+                <p> 
+                    <label for="email">Enter your Email:</label> <!--Recognizes "name" from input tag-->
+                    <input type="email" name="email" size="32" required placeholder="eg. rickastley@rca.com"> 
+                </p>
+            </form>
+    </div>
+</body>
+</html>
