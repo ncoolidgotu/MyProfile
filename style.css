@@ -128,6 +128,15 @@ body
     font-size: 2vw;
 }
 
+#contact form
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+    margin-left:5%;
+    font-size: 1.3vw;
+
+}
+
 .typewriter h3
 {
     width: 78ch;

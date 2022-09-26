@@ -35,6 +35,17 @@
                     <label for="email">Enter your Email:</label> <!--Recognizes "name" from input tag-->
                     <input type="email" name="email" size="32" required placeholder="eg. rickastley@rca.com"> 
                 </p>
+                <p> 
+                    <label for="tel">Enter your Phone Number:</label> <!--Recognizes "name" from input tag-->
+                    <input type="tel" name="tel" size="13" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="555-555-5555"> 
+                </p>
+                <p> 
+                    <br><label for="body">Type your message below:</label><br><br> <!--Recognizes "name" from input tag-->
+                    <textarea name="body" cols="80" rows="18" placeholder="I am inquiring about...." required></textarea> 
+                </p>
+                <p>
+                    <input type="submit" value="Send Message"/>
+                </p>
             </form>
     </div>
 </body>
