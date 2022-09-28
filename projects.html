@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Contact Me</title>
+    <title>Projects</title>
     <meta name="viewport" content="width=device-width">
     <!-- full-size monitor style sheet-->
     <link href="full.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)">
@@ -11,6 +11,7 @@
     <!-- phone style sheet-->
     <link href="phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
     <script src="main.js" type="text/javascript"></script>
+
 </head>
 <body>
     <div id="wrapper">
@@ -18,11 +19,11 @@
             <header>
                 <div class="mobileOnly">
                     <img src="nate.jpeg">
-                    <h1>Contact Me</h1>
+                    <h1>Projects</h1>
                     <a href="javascript:void(0);" class="icon" onclick="mobileNav()"><img src="homeIcon.png"></a>
                 </div>
                 <div class="desktopOnly">
-                    <h1>Contact Me</h1>
+                    <h1>Projects</h1>
                 </div>
             </header>
             <nav>
@@ -43,33 +44,26 @@
                 </div>
             </nav>
         </div>
-        <div id="contact">
-            <h2>Please use below form to contact me!</h2>
-            <form action=mailto:email@email.com ?subject=Signup Form method="post" enctype="text/plain" name="form">
-                <p> 
-                    <label for="fname">First Name:</label> <!--Recognizes "name" from input tag-->
-                    <input type="text" name="fname" size="32" required placeholder="Enter your first name"> 
-                </p>
-                <p> 
-                    <label for="lname">Last Name:</label> <!--Recognizes "name" from input tag-->
-                    <input type="text" name="lname" size="32" required placeholder="Enter your last name"> 
-                </p>
-                <p> 
-                    <label for="email">Enter your Email:</label> <!--Recognizes "name" from input tag-->
-                    <input type="email" name="email" size="32" required placeholder="eg. rickastley@rca.com"> 
-                </p>
-                <p> 
-                    <label for="tel">Enter your Phone Number:</label> <!--Recognizes "name" from input tag-->
-                    <input type="tel" name="tel" size="13" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="555-555-5555"> 
-                </p>
-                <p> 
-                    <br><label for="body">Type your message below:</label><br><br> <!--Recognizes "name" from input tag-->
-                    <textarea name="body" cols="60" rows="12" placeholder="I am inquiring about...." required></textarea> 
-                </p>
-                <p>
-                    <input type="submit" value="Send Message"/>
-                </p>
-            </form>
+        <article>
+            <section>
+                <h1>WFH Tracker</h1>
+                <h2>Python Personal Project</h2>
+                <p>For tracking hours worked remotely automatically. Monitors mouse movement to see if employee is working. Hours are tracked by day in SQLite database. <a href="https://www.google.com">Click here to view source code.</a><p>
+                <img src="https://www.jotform.com/blog/wp-content/uploads/2020/05/work-from-home-featured-02.png" class="img1">
+            </section>
+            <section>
+                <h1>PyOS</h1>
+                <h2>Python High School Project</h2>
+                <p>Micro operating system built entirely with Python. Demonstrates the use of the pickle serialization in Python. <a href="www.google.com">Click here to view source code.</a><p>
+                <img src="pyos.png" class="img2">
+            </section>
+            <section>
+                <h1>Restaurant Database</h1>
+                <h2>Python University Project</h2>
+                <p>Restaurant management system. Demonstrates the use of the Object Relational Mapping and PyQt6 GUI in Python. <a href="www.google.com">Click here to view source code.</a><p>
+                <img src="restaurant.png" class="img2">
+            </section>
+        </article>
     </div>
 </body>
 </html>
