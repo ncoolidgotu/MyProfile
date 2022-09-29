@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <meta name="viewport" content="width=device-width">
+    <!-- full-size monitor style sheet-->
+    <link href="full.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)">
+    <!-- tablet style sheet-->
+    <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:960px)">
+    <!-- phone style sheet-->
+    <link href="phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
+    <script src="main.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <div id="wrapper">
+        <div id="banner">
+            <header>
+                <div class="mobileOnly">
+                    <img src="nate.jpeg">
+                    <h1>About Me</h1>
+                    <a href="javascript:void(0);" class="icon" onclick="mobileNav()"><img src="homeIcon.png"></a>
+                </div>
+                <div class="desktopOnly">
+                    <h1>About Me</h1>
+                </div>
+            </header>
+            <nav>
+                <div class="desktopOnly">
+                    <img src="nate.jpeg">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Me</a> 
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact Me</a>
+                </div>
+                <div class="mobileOnly">
+                    <div id="mobileLinks">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Me</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="contact.html">Contact Me</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <article>
+            <section>
+                <h1>Summary</h1>
+                <h2>Networking and IT Specialist</h2>
+                <p>I bring a vast knowledge in the field of technology with a goal and passion to utilize it to innovate wherever I can. From a very young age I was interested in computers and have been studying different areas of computer technology for many years.
+                    <br><br>
+                    Although I am familiar with most areas, some of my strongest skills include:
+                    <br><br>
+                    - Network and Systems administration and design
+                    <br>
+                    - Python
+                    <br>
+                    - Virtualization
+                    <br>
+                    - Excel including VBA scripting
+                    <br>
+                    - Hardware maintenance
+                    <br>
+                    <br>
+                    Skills still in development:
+                    <br><br>
+                    - Cybersecurity
+                    <br>
+                    - Cloud Computing
+                    <br>
+                    - DevOps
+                </p>
+            </section>
+            <section>
+                <h1>Backstory</h1>
+                <h2>A Passion for IT</h2>
+                <p>I was born and raised in the small village of Wooler, Ontario. From a very young age, I have always been fascinated with technology and knew it would continue to be my passion. Growing up I did not have easy access to the internet. The best we had was 26kbps dial-up. However, that didn’t stop me. I made use of the times when I had an opportunity to access the internet.  I got interested in networking around the age of 11. The interest came from accidentally resetting my grandma’s router when playing around in the web GUI. The first thing I learned was configuring PPEoE so the DSL connection could be restored. After this, I obtained a cheap router and taught myself about IPv4 addressing so I could setup a personal LAN at home. I used this LAN to transfer files between computers or play games. Later on I bought a NAS so I could have a central file server. After that, I obtained a copy of Windows Server 2003 so I could learn the basics of how an active directory works.</p>
+                <p>Aside from the networking, the OS administration and computer hardware also interested me. Once I learned about VirtualBox, I obtained a copy of every Windows version from 1.0 to present and explored each version. I learned how drivers work and came up with creative solutions to make modern devices work on older software or vice-versa. After I played around in VMs, I started to get interested in the computer hardware and my first project was restoring an old IBM PC 350 my parents had in the basement. Since it was an old computer, I was allowed to mess around and learn how the hardware worked without risk of damaging anything. From this, I learned I enjoyed computer restoration and started a hobby of buying computers on Kijiji and refurbishing them to resell for profit.</p>
+                <p>Once I moved out of Wooler during the middle of high school, I finally had easy access to internet. With this, I taught myself port forwarding which opened up a realm of possibilities I had no idea I could do at home. Today, I continue to build on my skillset. I have a homelab running on a Dell PowerEdge server. Most of the applications on it run in Docker containers. I operate a VPN server so I can always access my home network, a VM manager with RDP active so I can access my applications from any computer, a Parsec and Minecraft server for gaming, a Plex server for multimedia access, a DDNS client so I can connect with a url, an AdGuard server, a home automation server, etc…</p>
+                <p>The goal in my career is to innovate wherever possible. That is what all my experience with computers from my childhood taught me. This is the purpose of technology, to make a task easier and more efficient. Whether it be writing a program, or implementing better hardware. The goal is to make use of the most current technology to improve the workflow. I try to do this every day in my job. While working in IT, I leaded a project to implement Miracast devices to enable wireless projection for employees during meetings. In Finance and Accounting, I use Excel formulas and VBA scripts to automate a lot of tasks and make the workflow more efficient. No matter what I do, the thing I always look for is where improvements can be made with the use of technology and then do the research to make the vision come to life.</p>
+                <p>I bring a passion for computers and to learn more about new technologies every day. I make use of current skills such as network administration, server administration, Python programming, data management, analysis, etc.. and a passion to master new skills wherever needed.</p>
+            </section>
+            <section>
+                <h1>Restaurant Database</h1>
+                <h2>Python University Project</h2>
+                <p>Restaurant management system. Demonstrates the use of the Object Relational Mapping and PyQt6 GUI in Python. <a href="www.google.com">Click here to view source code.</a><p>
+                    <video width="720" height="480" controls preload="auto" autoplay loop muted id="video">
+                        <source src="restaurant.mp4" type="video/mp4">
+                        <source src="restaurant.ogv" type="video/ogg">
+                    </video>
+            </section>
+        </article>
+    </div>
+    <footer> 
+        <h5>© 2022 Nate Coolidge</h5>
+        <address> 
+            <p>Contact me at <a href="mailto:ncool01@icloud.com">ncool01@icloud.com</a></p>
+        </address>
+    </footer>
+</body>
+</html>
