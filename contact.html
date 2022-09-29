@@ -45,31 +45,60 @@
         </div>
         <div id="contact">
             <h1>Please use below form to contact me!</h1>
-            <form action=mailto:email@email.com ?subject=Signup Form method="post" enctype="text/plain" name="form">
-                <p> 
-                    <label for="fname">First Name:</label> <!--Recognizes "name" from input tag-->
-                    <input type="text" name="fname" size="32" required placeholder="Enter your first name"> 
-                </p>
-                <p> 
-                    <label for="lname">Last Name:</label> <!--Recognizes "name" from input tag-->
-                    <input type="text" name="lname" size="32" required placeholder="Enter your last name"> 
-                </p>
-                <p> 
-                    <label for="email">Enter your Email:</label> <!--Recognizes "name" from input tag-->
-                    <input type="email" name="email" size="32" required placeholder="eg. rickastley@rca.com"> 
-                </p>
-                <p> 
-                    <label for="tel">Enter your Phone Number:</label> <!--Recognizes "name" from input tag-->
-                    <input type="tel" name="tel" size="13" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="555-555-5555"> 
-                </p>
-                <p> 
-                    <br><label for="body">Type your message below:</label><br><br> <!--Recognizes "name" from input tag-->
-                    <textarea name="body" cols="60" rows="12" placeholder="I am inquiring about...." required></textarea> 
-                </p>
-                <p>
-                    <input type="submit" value="Send Message"/>
-                </p>
-            </form>
+            <div class="desktopOnly">
+                <form action=mailto:email@email.com ?subject=Signup Form method="post" enctype="text/plain" name="form">
+                    <p> 
+                        <label for="fname">First Name:</label> <!--Recognizes "name" from input tag-->
+                        <input type="text" name="fname" size="32" required placeholder="Enter your first name"> 
+                    </p>
+                    <p> 
+                        <label for="lname">Last Name:</label> <!--Recognizes "name" from input tag-->
+                        <input type="text" name="lname" size="32" required placeholder="Enter your last name"> 
+                    </p>
+                    <p> 
+                        <label for="email">Enter your Email:</label> <!--Recognizes "name" from input tag-->
+                        <input type="email" name="email" size="32" required placeholder="eg. rickastley@rca.com"> 
+                    </p>
+                    <p> 
+                        <label for="tel">Enter your Phone Number:</label> <!--Recognizes "name" from input tag-->
+                        <input type="tel" name="tel" size="13" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="555-555-5555"> 
+                    </p>
+                    <p> 
+                        <br><label for="body">Type your message below:</label><br><br> <!--Recognizes "name" from input tag-->
+                        <textarea name="body" cols="60" rows="12" placeholder="I am inquiring about...." required></textarea> 
+                    </p>
+                    <p>
+                        <input type="submit" value="Send Message"/>
+                    </p>
+                </form>
+            </div>
+            <div class="mobileOnly">
+                <form action=mailto:email@email.com ?subject=Signup Form method="post" enctype="text/plain" name="form">
+                    <p> 
+                        <label for="fname">First Name:</label> <!--Recognizes "name" from input tag-->
+                        <input type="text" name="fname" size="16" required placeholder="Enter your first name"> 
+                    </p>
+                    <p> 
+                        <label for="lname">Last Name:</label> <!--Recognizes "name" from input tag-->
+                        <input type="text" name="lname" size="16" required placeholder="Enter your last name"> 
+                    </p>
+                    <p> 
+                        <label for="email">Enter your Email:</label> <!--Recognizes "name" from input tag-->
+                        <input type="email" name="email" size="16" required placeholder="eg. rickastley@rca.com"> 
+                    </p>
+                    <p> 
+                        <label for="tel">Enter your Phone Number:</label> <!--Recognizes "name" from input tag-->
+                        <input type="tel" name="tel" size="13" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="555-555-5555"> 
+                    </p>
+                    <p> 
+                        <br><label for="body">Type your message below:</label><br><br> <!--Recognizes "name" from input tag-->
+                        <textarea name="body" cols="30" rows="6" placeholder="I am inquiring about...." required></textarea> 
+                    </p>
+                    <p>
+                        <input type="submit" value="Send Message"/>
+                    </p>
+                </form>
+            </div>
         </div>
     </div>
     <footer> 

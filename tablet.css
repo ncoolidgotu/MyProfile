@@ -7,6 +7,11 @@
     from {bottom: -200px; opacity:0}
     to {bottom: 0px; opacity:1}
 }
+@keyframes nav_menu /*Animates an HTML element, tag learned from W3schools*/
+{
+    from {top: 0px; opacity:0}
+    to {bottom: 0px; opacity:1}
+}
 
 
 body 
@@ -14,21 +19,25 @@ body
     font-family: Verdana, Geneva, Arial, sans-serif; /*extra fonts in case not in user's system*/
     padding:0px; 
     margin:0px;
+    color: white;
 }
+
+
 
 #wrapper
 {
-    height:auto;
+    height:100;
     margin-left:auto;
     margin-right: auto;
     /*background-image:url(bg.gif);*/
-    background:linear-gradient(to bottom, #f5f6f6 0%,#dbdce2 21%,#b8bac6 49%,#dddfe3 80%,#f5f6f6 100%);
+    background: linear-gradient(to bottom, rgba(69,72,77,1) 6%,rgba(69,72,77,1) 23%,rgba(0,0,0,1) 100%)
 }
 
 nav
 {
     float:right;
-    background: linear-gradient(to bottom, rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%);
+    background: linear-gradient(to bottom, rgba(216,224,222,1) 0%,rgba(174,191,188,1) 22%,rgba(153,175,171,1) 33%,rgba(142,166,162,1) 50%,rgba(130,157,152,1) 67%,rgba(78,92,90,1) 82%,rgba(216,224,222,1) 100%,rgba(14,14,14,1) 100%);
+    border-radius: 10%;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
 }
@@ -40,6 +49,7 @@ nav
 
 #mobileLinks a
 { 
+    animation: nav_menu 1s;
     width: 150px;
     margin-bottom: 15px;
     font-size: 20px;
@@ -87,6 +97,10 @@ header h1
     float: left;
 }
 
+main
+{
+    height: 480px;
+}
 main .img1
 {
     position: relative;
@@ -153,12 +167,11 @@ article p
 
 #contact
 {
-    float:left;
     margin-left: 4%;
     margin-top: 2%;
     animation: fade_from_bottom 1.5s;
-    width:60%;
-    height:80%;
+    width:600px;
+    height:400px;
     background: linear-gradient(to bottom, rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%);
     border-radius: 10%;
     font-weight: bold;
@@ -168,8 +181,8 @@ article p
 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
-    margin-left:5%;
-    font-size: 2vw;
+    margin-left:150px;
+    font-size: 18px;
 }
 
 #contact form
@@ -177,7 +190,7 @@ article p
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: normal;
     margin-left:5%;
-    font-size: 1.3vw;
+    font-size: 12px;
 
 }
 
@@ -190,7 +203,15 @@ article p
     margin-left:5%;
     border-right: 3px solid;
     font-family: monospace;
+    color: white;
     font-size: 2vw;
+}
+
+footer
+{
+    float: left;
+    width:100%;
+    height:50px;
 }
 
 /*---------------Code below is form https://codepen.io/denic/pen/GRoOxbM------------------*/
