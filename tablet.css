@@ -105,8 +105,9 @@ main
 }
 main .img1
 {
+    float:left;
     position: relative;
-    margin-top: 1%;
+    margin-top: 3%;
     margin-left:5%;
     animation: fade_from_bottom 5s;
     border-radius: 25%;
@@ -115,10 +116,11 @@ main .img1
 
 main .img2
 {
+    float:left;
     position: relative;
     animation: fade_from_bottom 5s;
     border-radius: 25%;
-    margin-top:5%;
+    margin-top:2%;
     margin-left:2%;
     width:40%;
 }
@@ -141,6 +143,16 @@ article .img2
     width:330px;
 }
 
+article .img3
+{
+    position: relative;
+    margin-top: 1%;
+    animation: fade_from_bottom 5s;
+    border-radius: 10%;
+    margin-left: 3%;
+    width:25%;
+}
+
 article h1
 
 {
@@ -160,11 +172,18 @@ article h2
 
 article p
 {
+    text-indent: 40px;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     margin-left: 2%;
     margin-right:15%;
     margin-top: 0.5%;
+}
+
+video
+{
+    width: 100%;
+    height: auto;
 }
 
 #contact
@@ -199,6 +218,7 @@ article p
 .typewriter h3
 {
     width: 78ch;
+    position:relative;
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
@@ -218,8 +238,10 @@ footer
 .typewriter h2
 {
     width: 38ch;
+    position:relative;
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
+    margin-top: 25%;
     overflow: hidden;
     margin-left:0.1%;
     border-right: 3px solid;

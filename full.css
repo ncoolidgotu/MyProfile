@@ -20,8 +20,7 @@ body
 #wrapper
 {
     height:100%;
-    margin-left:auto;
-    margin-right: auto;
+    margin:auto;
 }
 
 nav
@@ -67,7 +66,6 @@ nav a:hover
 header
 {
     float: center;
-    width:auto;
     background: linear-gradient(to bottom, rgba(225,255,255,1) 0%,rgba(225,255,255,1) 7%,rgba(225,255,255,1) 12%,rgba(253,255,255,1) 12%,rgba(230,248,253,1) 30%,rgba(200,238,251,1) 54%,rgba(190,228,248,1) 75%,rgba(177,216,245,1) 100%);
 }
 
@@ -119,6 +117,16 @@ article .img2
     width:330px;
 }
 
+article .img3
+{
+    position: relative;
+    margin-top: 1%;
+    animation: fade_from_bottom 5s;
+    border-radius: 10%;
+    margin-left: 3%;
+    width:330px;
+}
+
 article h1
 
 {
@@ -143,6 +151,19 @@ article p
     margin-left: 2%;
     margin-right:15%;
     margin-top: 0.5%;
+}
+
+article li
+
+{
+    text-indent: 40px;
+}
+
+.intro_vid
+{
+    float: right;
+    width: 40%;
+    height: auto;
 }
 
 #contact
@@ -183,10 +204,6 @@ article p
     font-size: 2vw;
 }
 
-footer
-{
-
-}
 
 /*---------------Code below is form https://codepen.io/denic/pen/GRoOxbM------------------*/
 .typewriter h2

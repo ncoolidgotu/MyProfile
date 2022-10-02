@@ -31,7 +31,6 @@ body
     margin-left:auto;
     margin-right: auto;
     width: auto;
-    /*background-image:url(bg.gif);*/
     background: linear-gradient(to bottom, rgba(69,72,77,1) 6%,rgba(69,72,77,1) 23%,rgba(0,0,0,1) 100%)
 }
 
@@ -115,7 +114,7 @@ main .img1
     margin-left:5%;
     animation: fade_from_bottom 5s;
     border-radius: 25%;
-    width:80%;
+    width:60%;
 }
 
 main .img2
@@ -148,6 +147,16 @@ article .img2
     height: auto;
 }
 
+article .img3
+{
+    position: relative;
+    margin-top: 1%;
+    animation: fade_from_bottom 5s;
+    border-radius: 10%;
+    margin-left: 3%;
+    width:25%;
+}
+
 article h1
 
 {
@@ -167,6 +176,7 @@ article h2
 
 article p
 {
+    text-indent: 40px;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     margin-left: 2%;
