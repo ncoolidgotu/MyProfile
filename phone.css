@@ -18,20 +18,33 @@
 body 
 { 
     font-family: Verdana, Geneva, Arial, sans-serif; /*extra fonts in case not in user's system*/
-    padding:0px; 
-    margin:0px;
+    padding:0px;
+    min-height: 100vh;
+    margin:0;
     color: white;
     background-color: black;
 }
 
 
+main
+{
+    margin-top:60px
+}
 
 #wrapper
 {
-    margin-left:auto;
-    margin-right: auto;
-    width: auto;
-    background: linear-gradient(to bottom, rgba(69,72,77,1) 6%,rgba(69,72,77,1) 23%,rgba(0,0,0,1) 100%)
+    float: left;
+    height:100%;
+    width: 100%;
+    margin:auto;
+}
+
+#banner
+{
+    position: fixed;
+    z-index: 1; /*Force banner on top of everything else - https://stackoverflow.com/questions/54534042/looking-at-a-problem-with-image-overlapping-nav-bar*/
+    float: left;
+    width: 100%;
 }
 
 nav
@@ -103,11 +116,7 @@ header h1
     float: left;
 }
 
-main
-{
-    height: 480px;
-}
-main .img1
+#home_images .img1
 {
     position: relative;
     margin-top: 1%;
@@ -117,7 +126,7 @@ main .img1
     width:60%;
 }
 
-main .img2
+#home_images .img2
 {
     position: relative;
     animation: fade_from_bottom 5s;
@@ -234,6 +243,7 @@ video
 
 footer
 {
+    float: left;
     font-size: 8px;
 }
 
