@@ -2,13 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rubik+Dirt&display=swap');
 .desktopOnly{ display: none;}
 .notOnPhone{ display: none;}
+/* Color scheme hexidecimal #646464 #79DCF2 #8FA6A1 #F4F4F4 #0D0D0D */
 
-@keyframes fade_from_bottom /*Animates an HTML element, tag learned from W3schools*/
+@keyframes fade_in /*For animating the images*/
 {
-    from {bottom: -200px; opacity:0}
-    to {bottom: 0px; opacity:1}
+    0% {transform:translateY(-200px); opacity:0}
+    100% {transform:translateY(0px); opacity:1}
 }
-@keyframes nav_menu /*Animates an HTML element, tag learned from W3schools*/
+@keyframes nav_menu /*For animating the navigation menu*/
 {
     from {top: 0px; opacity:0}
     to {bottom: 0px; opacity:1}
@@ -19,17 +20,12 @@ body
 { 
     font-family: Verdana, Geneva, Arial, sans-serif; /*extra fonts in case not in user's system*/
     padding:0px;
-    min-height: 100vh;
+    min-height: 100vh;/*forces body to fill entire page no matter screen size*/
     margin:0;
     color: white;
     background-color: black;
 }
 
-
-main
-{
-    margin-top:60px
-}
 
 #wrapper
 {
@@ -75,7 +71,7 @@ nav
 {
     background: black;
     display: block;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
 }
@@ -116,12 +112,17 @@ header h1
     float: left;
 }
 
+main /*Semantec tag for main content of page*/
+{
+    margin-top:60px
+}
+
 #home_images .img1
 {
     position: relative;
     margin-top: 1%;
     margin-left:5%;
-    animation: fade_from_bottom 5s;
+    animation: fade_in 5s;
     border-radius: 25%;
     width:60%;
 }
@@ -129,7 +130,7 @@ header h1
 #home_images .img2
 {
     position: relative;
-    animation: fade_from_bottom 5s;
+    animation: fade_in 5s;
     border-radius: 25%;
     margin-top:5%;
     margin-left:2%;
@@ -140,7 +141,7 @@ article .img1
 {
     position: relative;
     margin-top: 1%;
-    animation: fade_from_bottom 5s;
+    animation: fade_in 5s;
     border-radius: 25%;
     width: 100%;
     height: auto;
@@ -150,7 +151,7 @@ article .img2
 {
     position: relative;
     margin-top: 1%;
-    animation: fade_from_bottom 5s;
+    animation: fade_in 5s;
     border-radius: 1%;
     width: 100%;
     height: auto;
@@ -160,10 +161,10 @@ article .img3
 {
     position: relative;
     margin-top: 1%;
-    animation: fade_from_bottom 5s;
+    animation: fade_in 5s;
     border-radius: 10%;
     margin-left: 3%;
-    width:25%;
+    width:200px;
 }
 
 article h1
@@ -195,11 +196,11 @@ article p
 
 #contact
 {
-    margin-left: 4%;
-    margin-top: 2%;
-    animation: fade_from_bottom 1.5s;
+    margin-left: 20px;
+    margin-top: 10px;
+    animation: fade_in 1.5s;
     width:90%;
-    height:auto;
+    height:700px;
     background: linear-gradient(to bottom, rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%);
     border-radius: 10%;
     font-weight: bold;
@@ -210,16 +211,38 @@ article p
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     margin-left:8%;
-    font-size: 5vw;
+    font-size: 16px;
 }
 
-#contact form
+form
 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: normal;
     margin-left:5%;
     font-size: 12px;
+    width: 20%;
 
+}
+
+#contact textarea 
+{
+    width: 280px;
+    height: 280px;
+}
+
+#contact input 
+{
+    width: 250px;
+}
+
+#contact input[type="tel"]
+{
+    width: 100px;
+}
+
+#contact input[type="submit"]
+{
+    width: 100px;
 }
 
 .typewriter h3
@@ -247,7 +270,7 @@ footer
     font-size: 8px;
 }
 
-/*---------------Code below is form https://codepen.io/denic/pen/GRoOxbM------------------*/
+/*---------------Code below for typewriter effect is learned from https://codepen.io/denic/pen/GRoOxbM------------------*/
 .typewriter h2
 {
     width: 38ch;

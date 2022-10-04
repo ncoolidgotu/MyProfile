@@ -2,22 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rubik+Dirt&display=swap');
 .mobileOnly{ display: none;}
 .phoneOnly{ display: none;}
-@keyframes fade_from_bottom /*Animates an HTML element, tag learned from W3schools*/
-{
-    from {bottom: -200px; opacity:0}
-    to {bottom: 0px; opacity:1}
-}
+/* Color scheme hexidecimal values #2372D9 #359AF2 #B9E1F7 #66BCF2 #CACAD4 */
 
+@keyframes fade_in /*For animating the images*/
+{
+    0% {transform:translateY(-200px); opacity:0}
+    100% {transform:translateY(0px); opacity:1}
+}
 
 body 
 { 
     font-family: Verdana, Geneva, Arial, sans-serif; /*extra fonts in case not in user's system*/
     background:linear-gradient(to bottom, #f5f6f6 0%,#dbdce2 21%,#b8bac6 49%,#dddfe3 80%,#f5f6f6 100%);
-    min-height: 100vh;
+    min-height: 100vh;/*forces body to fill entire page no matter screen size*/
     margin: 0;
 }
 
-#wrapper
+#wrapper 
 {
     float: left;
     height:100%;
@@ -25,7 +26,32 @@ body
     margin:auto;
 }
 
-nav
+#banner
+{
+    position: fixed;
+    z-index: 1; /*Force banner on top of everything else - https://stackoverflow.com/questions/54534042/looking-at-a-problem-with-image-overlapping-nav-bar*/
+    float: left;
+    width: 100%;
+}
+
+header
+{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background:  radial-gradient(ellipse at center, rgba(240,249,255,1) 0%,rgba(203,235,255,1) 47%,rgba(161,219,255,1) 100%);
+}
+
+header h1
+{ 
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+nav /*Navigation bar*/
 {
     float:left;
     width:100%;
@@ -43,6 +69,7 @@ nav img
     margin-top: 0.7%;
     margin-bottom: 0.5%;
 }
+
 nav a
 { 
     width: 20%;
@@ -65,30 +92,9 @@ nav a:hover
     padding: 0.38%;
 }
 
-header
+main /*Semantec tag for main content of page*/
 {
-    float: center;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    background: linear-gradient(to bottom, rgba(225,255,255,1) 0%,rgba(225,255,255,1) 7%,rgba(225,255,255,1) 12%,rgba(253,255,255,1) 12%,rgba(230,248,253,1) 30%,rgba(200,238,251,1) 54%,rgba(190,228,248,1) 75%,rgba(177,216,245,1) 100%);
-}
-
-header h1
-{ 
-    font-family: 'Rubik Dirt', cursive;
-    font-size: 40px;
-    margin-top: 0;
-    margin-bottom: 0;
-    text-align: center;
-}
-
-#banner
-{
-    position: fixed;
-    z-index: 1; /*Force banner on top of everything else - https://stackoverflow.com/questions/54534042/looking-at-a-problem-with-image-overlapping-nav-bar*/
-    float: left;
-    width: 100%;
+    margin-top:114px;
 }
 
 #home_images
@@ -97,18 +103,13 @@ header h1
     width:100%;
 }
 
-main
-{
-    margin-top:114px;
-}
-
 #home_images .img1
 {
     float: left;
     position: relative;
     margin-top: 5%;
     margin-left:5%;
-    animation: fade_from_bottom 5s;
+    animation: fade_in 5s;
     border-radius: 25%;
     width:20%;
 }
@@ -117,7 +118,7 @@ main
 {
     float: left;
     position: relative;
-    animation: fade_from_bottom 5s;
+    animation: fade_in 5s;
     border-radius: 25%;
     margin-top:3%;
     margin-left:2%;
@@ -129,7 +130,7 @@ article .img1
 {
     position: relative;
     margin-top: 1%;
-    animation: fade_from_bottom 5s;
+    animation: fade_in 5s;
     border-radius: 25%;
     width:330px;
 }
@@ -138,7 +139,7 @@ article .img2
 {
     position: relative;
     margin-top: 1%;
-    animation: fade_from_bottom 5s;
+    animation: fade_in 5s;
     border-radius: 1%;
     width:330px;
 }
@@ -147,11 +148,13 @@ article .img3
 {
     position: relative;
     margin-top: 1%;
-    animation: fade_from_bottom 5s;
+    animation: fade_in 5s;
     border-radius: 10%;
     margin-left: 3%;
-    width:330px;
+    width:400px;
+    height: 300px;
 }
+
 
 article h1
 
@@ -180,7 +183,6 @@ article p
 }
 
 article li
-
 {
     text-indent: 40px;
 }
@@ -188,6 +190,8 @@ article li
 .intro_vid
 {
     float: right;
+    position: absolute;
+    left:600px;
     width: 40%;
     height: auto;
     border-radius: 10%;
@@ -198,7 +202,7 @@ article li
     float: left;
     margin-left: 4%;
     margin-top:1%;
-    animation: fade_from_bottom 1.5s;
+    animation: fade_in 1.5s;
     width:800px;
     height:600px;
     background: linear-gradient(to bottom, rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%);
@@ -220,6 +224,33 @@ article li
     font-size: 18px;
 }
 
+#contact textarea 
+{
+    width: 500px;
+    height: 150px;
+}
+
+#contact input 
+{
+    width: 300px;
+}
+
+#contact input[type="tel"]
+{
+    width: 100px;
+}
+
+#contact input[type="submit"]
+{
+    width: 100px;
+}
+
+.typewriter
+{
+    float:left;
+    position: relative;
+}
+
 .typewriter h3
 {
     width: 78ch;
@@ -227,7 +258,7 @@ article li
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
-    margin-left:5%;
+    margin-left: 30px;
     border-right: 3px solid;
     font-family: monospace;
     font-size: 2vw;
@@ -246,8 +277,8 @@ footer
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
-    margin-top:25%;
-    margin-left:5%;
+    margin-top:20px;
+    margin-left: 30px;
     border-right: 3px solid;
     font-family: monospace;
     font-size: 2vw;
