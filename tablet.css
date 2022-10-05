@@ -33,7 +33,7 @@ body
     margin:auto;
 }
 
-#banner
+#banner /*Container for header and nav*/
 {
     position: fixed;
     z-index: 1; /*Force banner on top of everything else - https://stackoverflow.com/questions/54534042/looking-at-a-problem-with-image-overlapping-nav-bar*/
@@ -85,6 +85,17 @@ nav /*Navigation screen*/
     display: none;
 }
 
+#mobileLinks a:link 
+{ 
+    text-decoration: none; 
+}
+
+#mobileLinks a:hover
+{ 
+    color: green; 
+    background: linear-gradient(to bottom, rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%);
+}
+
 #mobileLinks a
 { 
     animation: nav_menu 1s; /*animate the pop-up menu*/
@@ -92,18 +103,27 @@ nav /*Navigation screen*/
     margin-bottom: 15px;
     font-size: 20px;
     border-radius: 10px;
+    color: black;
     padding: 5px;
-    display: block;
+    display: block; /*Put each item on new line*/
     background: linear-gradient(to bottom, rgba(179,220,237,1) 0%,rgba(41,184,229,1) 50%,rgba(188,224,238,1) 100%); 
 }
 
-.mobileOnly a.icon /* House icon for site navigation */
+/* Style the mobile navigation menu */
+.mobileOnly a.icon {
+    background: transparent;
+    display: block; /*Put each item on new line*/
+    color: white;
+    position: absolute;
+    right: 15px;
+    top: 5px;
+}
+
+.social_img
 {
-    background: black;
-    display: block;
-    position: fixed;
-    right: 0;
-    top: 0;
+    width:50px;
+    height: auto;
+    padding: 10px;
 }
 
 main /*Semantec tag for main content of page*/
@@ -134,25 +154,27 @@ main /*Semantec tag for main content of page*/
     width:40%;
 }
 
-article .img1 /*classes for article images*/
+aside .img1 /*classes for article images*/
 {
     position: relative;
     margin-top: 1%;
+    margin-left: 2%;
     animation: fade_in 5s;
     border-radius: 25%;
     width:330px;
 }
 
-article .img2
+aside .img2
 {
     position: relative;
     margin-top: 1%;
+    margin-left: 2%;
     animation: fade_in 5s;
     border-radius: 1%;
     width:330px;
 }
 
-article .img3
+aside .img3
 {
     position: relative;
     margin-top: 1%;
@@ -189,21 +211,22 @@ article p
     margin-top: 0.5%;
 }
 
-video
+aside video /*Videos in article*/
 {
-    width: 90%;
+    width: 80%;
+    margin-left: 2%;
     height: auto;
 }
 
 #contact /*contact form box*/
 {
-    margin-left: 4%;
+    margin-left: 2%;
     margin-top: 2%;
     animation: fade_in 1.5s;
-    width:400px;
+    width:90%;
     height:600px;
     height:auto;
-    background: linear-gradient(to bottom, rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%);
+    background: transparent;
     border-radius: 10%;
     font-weight: bold;
 }
@@ -212,33 +235,59 @@ video
 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
-    margin-left:40px;
-    font-size: 18px;
+    margin-left:23%;
+    font-size: 24px;
 }
 
 #contact form
 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: normal;
-    margin-left:5%;
-    font-size: 12px;
+    margin-left:15%;
+    font-size: 18px;
 
 }
 
 #contact textarea 
 {
     width: 280px;
-    height: 280px;
+    height: 150px;
+    background-color: grey;
+    color: white;
+    font-size: 14px;
 }
 
 #contact input 
 {
-    width: 250px;
+    width: 80%;
+    background-color: grey;
+    color: white;
+    font-size: 14px;
+    padding: 12px 12px;
+    box-sizing: border-box;
 }
 
-#contact input[type="tel"]
-{
-    width: 100px;
+#submit:hover /*When submit button is clicked*/
+{ 
+    color: green; 
+    background: linear-gradient(to bottom, rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%);
+}
+
+#submit
+{ 
+    animation: nav_menu 1s; /*animate the pop-up menu*/
+    width: 150px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: black;
+    padding: 5px;
+    display: block;
+    background: linear-gradient(to bottom, rgba(179,220,237,1) 0%,rgba(41,184,229,1) 50%,rgba(188,224,238,1) 100%); 
+}
+
+input:focus {
+    border: 3px solid #555;
 }
 
 #contact input[type="submit"]

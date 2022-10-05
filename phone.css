@@ -35,7 +35,7 @@ body
     margin:auto;
 }
 
-#banner
+#banner /*Container for header and nav*/
 {
     position: fixed;
     z-index: 1; /*Force banner on top of everything else - https://stackoverflow.com/questions/54534042/looking-at-a-problem-with-image-overlapping-nav-bar*/
@@ -51,39 +51,59 @@ nav
     font-weight: bold;
 }
 
-#mobileLinks
+#mobileLinks /* Only to be displayed when user clicks to open menu*/
 {
     display: none;
 }
 
-#mobileLinks a
+#mobileLinks a:link 
+{ 
+    text-decoration: none; /* Remove underline*/
+}
+
+#mobileLinks a:hover /* When user clicks a button in nav*/
+{ 
+    color: green; 
+    background: linear-gradient(to bottom, rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%);
+}
+
+#mobileLinks a /* Format the button*/
 { 
     animation: nav_menu 1s;
     margin-bottom: 15px;
     font-size: 20px;
     border-radius: 10px;
+    color: black;
     padding: 5px;
     display: block;
     background: linear-gradient(to bottom, rgba(179,220,237,1) 0%,rgba(41,184,229,1) 50%,rgba(188,224,238,1) 100%); 
 }
 
-.mobileOnly a.icon 
-{
-    background: black;
+/* Style the home icon for navigation */
+.mobileOnly a.icon {
+    background: transparent;
     display: block;
-    position: fixed;
-    right: 0;
-    top: 0;
+    color: white;
+    position: absolute;
+    right: 15px;
+    top: 5px;
 }
 
-.phoneOnly
+.social_img /* Class for social links*/
+{
+    width:50px;
+    height: auto;
+    padding: 10px;
+}
+
+.phoneOnly /*Class which only is used for phone displays. Hidden in all other CSS files*/
 {
     font-family: monospace;
     font-size: 2vw;
     margin-left: 5%;
 }
 
-header img
+header img /* Image in the header*/
 {
     float:left;
     margin-left: 1%;
@@ -117,7 +137,7 @@ main /*Semantec tag for main content of page*/
     margin-top:60px
 }
 
-#home_images .img1
+#home_images .img1 /* Classes for images on the homepage*/
 {
     position: relative;
     margin-top: 1%;
@@ -137,27 +157,29 @@ main /*Semantec tag for main content of page*/
     width:90%;
 }
 
-article .img1
+aside .img1 /*Images within the articles*/
 {
     position: relative;
     margin-top: 1%;
+    margin-left: 2%;
     animation: fade_in 5s;
     border-radius: 25%;
-    width: 100%;
+    width: 90%;
     height: auto;
 }
 
-article .img2
+aside .img2
 {
     position: relative;
     margin-top: 1%;
+    margin-left: 2%;
     animation: fade_in 5s;
     border-radius: 1%;
-    width: 100%;
+    width: 90%;
     height: auto;
 }
 
-article .img3
+aside .img3
 {
     position: relative;
     margin-top: 1%;
@@ -194,14 +216,15 @@ article p
     margin-top: 0.5%;
 }
 
-#contact
+#contact /*contact form box*/
 {
-    margin-left: 20px;
-    margin-top: 10px;
+    margin-left: 2%;
+    margin-top: 2%;
     animation: fade_in 1.5s;
     width:90%;
-    height:700px;
-    background: linear-gradient(to bottom, rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%);
+    height:600px;
+    height:auto;
+    background: transparent;
     border-radius: 10%;
     font-weight: bold;
 }
@@ -210,39 +233,54 @@ article p
 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
-    margin-left:8%;
-    font-size: 16px;
+    margin-left:18%;
+    font-size: 24px;
 }
 
-form
+#contact form
 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: normal;
-    margin-left:5%;
-    font-size: 12px;
-    width: 20%;
+    margin-left:15%;
+    font-size: 18px;
 
 }
 
 #contact textarea 
 {
     width: 280px;
-    height: 280px;
+    height: 150px;
+    background-color: grey;
+    color: white;
+    font-size: 14px;
 }
 
 #contact input 
 {
-    width: 250px;
+    width: 80%;
+    background-color: grey;
+    color: white;
+    font-size: 14px;
+    padding: 12px 12px;
+    box-sizing: border-box;
 }
 
-#contact input[type="tel"]
-{
-    width: 100px;
+#submit:hover /*When user clicks submit button on form*/
+{ 
+    color: green; 
+    background: linear-gradient(to bottom, rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%);
 }
 
-#contact input[type="submit"]
-{
-    width: 100px;
+#submit
+{ 
+    width: 150px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: black;
+    padding: 5px;
+    display: block;
+    background: linear-gradient(to bottom, rgba(179,220,237,1) 0%,rgba(41,184,229,1) 50%,rgba(188,224,238,1) 100%); 
 }
 
 .typewriter h3
@@ -258,7 +296,7 @@ form
     font-size: 3vw;
 }
 
-video
+aside video
 {
     width: 100%;
     height: auto;

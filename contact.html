@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width">
     <link rel="icon" type="image/png" href="nate.jpeg"> <!--Add image to addres bar https://www.w3.org/2005/10/howto-favicon-->
     <!-- full-size monitor style sheet-->
-    <link href="full.css?v=6" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)">
+    <link href="full.css?v=19" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)">
     <!-- tablet style sheet-->
-    <link href="tablet.css?v=6" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:960px)">
+    <link href="tablet.css?v=19" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:960px)">
     <!-- phone style sheet-->
-    <link href="phone.css?v=6" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
+    <link href="phone.css?v=19" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
     <script src="main.js?v=2" type="text/javascript"></script>
 </head>
 <body>
@@ -50,19 +50,19 @@
             <h1>Please use below form to contact me!</h1>
                 <form action="mailto:ncool01@icloud.com?subject=Inquiry" method="post" enctype="text/plain" name="form">
                     <p> 
-                        <label for="fname">First Name:</label> <!--Recognizes "name" from input tag-->
+                        <label for="fname">First Name:</label> <!--Recognizes "name" from input tag--><br>
                         <input type="text" name="fname" id="fname" size="32" required placeholder="Enter your first name"> 
                     </p>
                     <p> 
-                        <label for="lname">Last Name:</label> <!--Recognizes "name" from input tag-->
+                        <label for="lname">Last Name:</label> <!--Recognizes "name" from input tag--><br>
                         <input type="text" name="lname" id="lname" size="32" required placeholder="Enter your last name"> 
                     </p>
                     <p> 
-                        <label for="email">Email:</label> <!--Recognizes "name" from input tag-->
+                        <label for="email">Email:</label> <!--Recognizes "name" from input tag--><br>
                         <input type="email" name="email" id="email" size="32" required placeholder="eg. rickastley@rca.com"> 
                     </p>
                     <p> 
-                        <label for="tel">Phone Number:</label> <!--Recognizes "name" from input tag-->
+                        <label for="tel">Phone Number:</label> <!--Recognizes "name" from input tag--><br>
                         <input type="tel" name="tel" id="tel" size="13" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="555-555-5555"> 
                     </p>
                     <p> 
@@ -70,7 +70,7 @@
                         <textarea name="message" id="message" placeholder="I am inquiring about...." required></textarea> 
                     </p>
                     <p>
-                        <input type="submit" value="Send Message"/>
+                        <button id="submit">Submit</button>
                     </p>
                 </form>
             </div>
