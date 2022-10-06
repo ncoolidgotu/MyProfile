@@ -2,6 +2,11 @@ https://nate.coolidge.ml
 
 Website is hosted on my own web server and proxied via CloudFlare
 
+
+
+
+
+
 Backup in case the server is down:
 https://ncoolidgotu.github.io/MyProfile/projects.html
 
