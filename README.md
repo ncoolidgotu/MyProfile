@@ -3,13 +3,6 @@ https://nate.coolidge.ml
 Website is hosted on my own web server and proxied via CloudFlare
 
 
-
-
-
-
-Backup in case the server is down:
-https://ncoolidgotu.github.io/MyProfile/projects.html
-
 Sources Used:
 
 Add image to addres bar https://www.w3.org/2005/10/howto-favicon
@@ -22,3 +15,6 @@ https://www.dignited.com/wp-content/uploads/2016/11/DSL-business.jpg
 https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWiLjQMRMaqcSMPd7vYpKamhWwUC3jmrEOTKVIembq_63nnlPy
 https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9V-OxQBPTYd-fd2JytLVBDk9BTWxzhh-l15khiSn_7a7wOOXp
 
+
+Backup website in case the server is down:
+https://ncoolidgotu.github.io/MyProfile/projects.html
